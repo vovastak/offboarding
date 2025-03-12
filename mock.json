@@ -1,1 +1,72 @@
-{ "users": [] }
+{
+  "employees": [
+    {
+      "id": "vvv1323",
+      "name": "John Doe",
+      "department": "Engineering",
+      "status": "ACTIVE",
+      "email": "some.email@wp.pl",
+      "equipments": [
+        {
+          "id": "aaa123456",
+          "name": "Macbook air"
+        },
+        {
+          "id": "aaa123456",
+          "name": "Magic Mouse"
+        }
+      ]
+    },
+    {
+      "id": "vvv1324",
+      "name": "Jane Smith",
+      "department": "Marketing",
+      "status": "INACTIVE",
+      "email": "jane.smith@wp.pl",
+      "equipments": [
+        {
+          "id": "bbb123456",
+          "name": "Dell XPS 13"
+        },
+        {
+          "id": "bbb123457",
+          "name": "Logitech Keyboard"
+        }
+      ]
+    },
+    {
+      "id": "vvv1325",
+      "name": "Alice Johnson",
+      "department": "Sales",
+      "status": "ACTIVE",
+      "email": "alice.johnson@wp.pl",
+      "equipments": [
+        {
+          "id": "ccc123456",
+          "name": "HP Spectre x360"
+        },
+        {
+          "id": "ccc123457",
+          "name": "HP Mouse"
+        }
+      ]
+    },
+    {
+      "id": "vvv1326",
+      "name": "Bob Brown",
+      "department": "HR",
+      "status": "ACTIVE",
+      "email": "bob.brown@wp.pl",
+      "equipments": [
+        {
+          "id": "ddd123456",
+          "name": "Lenovo ThinkPad"
+        },
+        {
+          "id": "ddd123457",
+          "name": "Microsoft Surface Mouse"
+        }
+      ]
+    }
+  ]
+}
