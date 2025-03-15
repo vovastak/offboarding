@@ -1,5 +1,5 @@
 import { inject } from '@angular/core';
-import { Routes } from '@angular/router';
+import { ActivatedRouteSnapshot, Routes } from '@angular/router';
 import { ApiService } from './services/api.service';
 
 export const routes: Routes = [
@@ -18,6 +18,9 @@ export const routes: Routes = [
   },
   {
     path: 'employee/:id',
+    resolve: {
+      employee: (route: ActivatedRouteSnapshot) => inject(ApiService).getEmployeeById(route.params['id']),
+    },
     loadComponent: () => import('./components/employee/employee.component').then((m) => m.EmployeeComponent),
   },
 ];

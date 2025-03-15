@@ -1,1 +1,23 @@
-<p>employee works!</p>
+<button mat-icon-button routerLink="/" class="mr-4">
+  <mat-icon class="align-top">arrow_back</mat-icon>
+</button>
+<div class="bg-warm-yellow-100 mt-1 rounded-lg p-6 shadow-md">
+  <div class="mb-4 flex justify-between">
+    <h2 class="text-2xl font-bold">{{ employee().name }}</h2>
+    <button mat-raised-button color="warn">Offboard</button>
+  </div>
+  <h4 class="mt-6 mb-2 text-xl font-semibold">Employee Details:</h4>
+  <p><b>ID:</b> {{ employee().id }}</p>
+  <p><b>Department:</b> {{ employee().department }}</p>
+  <p><b>Status:</b> {{ employee().status }}</p>
+  <p><b>Email:</b> {{ employee().email }}</p>
+  <h4 class="mt-6 mb-2 text-xl font-semibold">Equipments:</h4>
+  <ul class="list-disc pl-5">
+    @for (equipment of employee().equipments; track equipment) {
+      <li class="mb-2">
+        <p><b>ID:</b> {{ equipment.id }}</p>
+        <p><b>Name:</b> {{ equipment.name }}</p>
+      </li>
+    }
+  </ul>
+</div>
