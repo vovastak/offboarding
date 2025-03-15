@@ -4,7 +4,7 @@
 <div class="bg-warm-yellow-100 mt-1 rounded-lg p-6 shadow-md">
   <div class="mb-4 flex justify-between">
     <h2 class="text-2xl font-bold">{{ employee().name }}</h2>
-    <button mat-raised-button color="warn">Offboard</button>
+    <button mat-raised-button (click)="openOffboardingDialog()">Offboard</button>
   </div>
   <h4 class="mt-6 mb-2 text-xl font-semibold">Employee Details:</h4>
   <p><b>ID:</b> {{ employee().id }}</p>
